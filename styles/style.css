@@ -1,0 +1,82 @@
+.navbar {
+    width: auto;
+}
+
+.notes-nav {
+    width: auto;
+    padding: 0.3rem;
+}
+
+.notes-nav-img {
+    width: auto;
+}
+
+.nav-img {
+    width: 4rem;
+}
+
+.notes-nav-items {
+    width: auto;
+}
+
+.nav-two {
+    background: #eeeeee;
+}
+
+.form {
+    text-align: center;
+    align-items: center;
+    width: auto;
+    height: 6rem;
+}
+
+
+.notes-form {
+    margin: 1.4rem;
+    align-items: center;
+    text-align: center;
+    width: auto;
+    height: auto;
+}
+
+.box-sub {
+    text-decoration: none;
+    color: #333333;
+    background: #F7F7F7;
+    border: 1px solid #dedfe0;
+    border-radius: 0.3rem;
+    margin: 1.6rem 0;
+    padding: 1.6rem;
+    display: block;
+    height: auto;
+    width: auto;
+    transition: background .3s ease;
+}
+
+.box-sub:hover {
+    background: #eeeeee;
+}
+
+.box-title {
+    font-size: 1.4rem;
+    margin-bottom: .4rem;
+    margin-top: -11px;
+    height: auto;
+    width: auto;
+    margin-inline-end: -12rem;
+    margin: auto;
+}
+
+.box-edited {
+    color: #666;
+    font-size: 1.2rem;
+    font-weight: 300;
+    font-style: italic;
+    height: auto;
+    width: auto;
+    margin: auto;
+}
+
+
+
+

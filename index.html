@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Notes</title>
+    <link href="images/clipboard.webp" rel="icon">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+
+<body>
+    <!-- Navbar Start-->
+    <nav class="navbar navbar-expand-lg navbar-success bg-success border-bottom border-bottom-success">
+        <div class="container-fluid mx-2 navbar-text notes-nav-items">
+            <div class="container d-flex align-items-center notes-nav-img">
+                <img class="d-flex align-items-center mx-3 nav-img" src="images/th.jpeg" alt="">
+            </div>
+            <div class="container notes-nav align-items-center">
+                <h1 class="fw-bold">Prime Notes</h1>
+                <h4>Take Notes and never forget</h4>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End-->
+
+    <!-- Navbar 2 Starts -->
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid d-flex justify-content-center nav-two">
+
+            <div>
+                <form class="d-flex" role="search">
+                    <input id="filter-notes" class="form-control me-2" type="search" placeholder="Search Notes"
+                        aria-label="Search">
+                </form>
+            </div>
+
+            <div>
+                <select id="sort-notes" class="mx-2 my-2 btn btn-secondary">
+                    <option value="byEdited">Sort by Edited</option>
+                    <option value="byCreated">Sort by Created</option>
+                    <option value="alphabetically">By Alphabetically</option>
+                </select>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar 2 Ends -->
+
+    <!-- Form Starts -->
+    <div class="container form d-flex justify-content-center">
+        <div class="mx-3 my-3">
+            <form id="add-notes" class="row gy-2 gx-2 align-items-center notes-form" name="addNotes">
+                <div class="col-auto">
+                    <label class="visually-hidden" for="autoSizingInput">Name</label>
+                    <input type="text" class="form-control" id="autoSizingInput" placeholder="Add Notes"
+                        name="addNotes">
+                </div>
+                <div class="col-auto">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Form End -->
+
+    <div class="container">
+        <!-- <div class="box-sub">
+            <h4 class="box-title">Notes Box</h4>
+            <p class="box-edited">Last edited an hour ago</p>
+        </div> -->
+        <div id="notes" class="mx-3"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment-with-locales.min.js"></script>
+    <script src="/scripts/app.js"></script>
+    <script src="/scripts/notes.js"></script>
+</body>
+
+</html>

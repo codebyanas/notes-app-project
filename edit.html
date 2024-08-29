@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Page</title>
+    <link href="images/clipboard.webp" rel="icon">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <div class="container ">
+                <button id="home-btn" class="btn btn-outline-success  mx-0 my-2">Home</button>
+                <h2 class="fw-semibold d-flex justify-content-center">Notes Edit Page</h2>
+                <div class="container d-flex justify-content-center">
+                    <img class="d-flex justify-content-center" src="images/th.jpeg" style="width: 3rem;" alt="">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="container"><input id="note-text" class="mx-0 my-3 form-control form-add" type="text"
+                placeholder="Add Notes"></div>
+        <div class="container"><textarea id="note-desc" class="mx-0 form-control form-desc" cols="2" rows="4"
+                placeholder="Enter Description"></textarea></div>
+        <div class="container">
+            <p id="note-updated" class="fst-italic fw-semibold mx- my-3"></p>
+        </div>
+        <div class="container">
+            <button id="note-done" class="btn btn-dark mx-0">Done</button>
+            <button id="note-remove" class="btn btn-danger mx-1">Remove</button>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment-with-locales.min.js"></script>
+    <script src="/scripts/app.js"></script>
+    <script src="/scripts/edit.js"></script>
+</body>
+
+</html>
